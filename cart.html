@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Review your RoastBite cart and proceed to checkout. Premium food delivery crafted with care.">
+  <meta property="og:title" content="Cart — RoastBite">
+  <meta property="og:description" content="Review your items before checkout. Premium food delivery crafted with care.">
+  <meta property="og:type" content="website">
+  <title>Cart — RoastBite</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon">☕</span>
+        <span class="brand-name">RoastBite</span>
+      </a>
+      <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+      <label for="nav-toggle" class="nav-overlay"></label>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="cart.html" class="nav-link cart-link active">Cart <span class="cart-badge">3</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">YOUR ORDER</span>
+      <h1 class="section-title">Shopping Cart</h1>
+      <p class="section-subtitle">Review your items before checkout</p>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section class="cart-section">
+    <div class="container">
+      <div class="cart-layout">
+
+        <!-- Cart Items -->
+        <div class="cart-items">
+
+          <!-- Item 1: Truffle Mushroom Burger -->
+          <div class="cart-item">
+            <img src="images/burger.png" alt="Truffle Mushroom Burger" class="cart-item-image">
+            <div class="cart-item-info">
+              <h3 class="cart-item-name">Truffle Mushroom Burger</h3>
+              <p class="cart-item-details">Brioche bun, truffle aioli</p>
+              <div class="cart-item-qty">
+                <button class="qty-btn" aria-label="Decrease quantity">−</button>
+                <span class="qty-value">2</span>
+                <button class="qty-btn" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+            <div class="cart-item-actions">
+              <span class="cart-item-price">$33.80</span>
+              <button class="cart-item-remove">REMOVE</button>
+            </div>
+          </div>
+
+          <!-- Item 2: Salmon Nigiri Set -->
+          <div class="cart-item">
+            <img src="images/sushi.png" alt="Salmon Nigiri Set" class="cart-item-image">
+            <div class="cart-item-info">
+              <h3 class="cart-item-name">Salmon Nigiri Set</h3>
+              <p class="cart-item-details">8 pieces, pickled ginger</p>
+              <div class="cart-item-qty">
+                <button class="qty-btn" aria-label="Decrease quantity">−</button>
+                <span class="qty-value">1</span>
+                <button class="qty-btn" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+            <div class="cart-item-actions">
+              <span class="cart-item-price">$22.00</span>
+              <button class="cart-item-remove">REMOVE</button>
+            </div>
+          </div>
+
+          <!-- Item 3: Classic Carbonara -->
+          <div class="cart-item">
+            <img src="images/pasta.png" alt="Classic Carbonara" class="cart-item-image">
+            <div class="cart-item-info">
+              <h3 class="cart-item-name">Classic Carbonara</h3>
+              <p class="cart-item-details">Guanciale, pecorino romano</p>
+              <div class="cart-item-qty">
+                <button class="qty-btn" aria-label="Decrease quantity">−</button>
+                <span class="qty-value">1</span>
+                <button class="qty-btn" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+            <div class="cart-item-actions">
+              <span class="cart-item-price">$18.50</span>
+              <button class="cart-item-remove">REMOVE</button>
+            </div>
+          </div>
+
+          <!-- Item 4: Flat White -->
+          <div class="cart-item">
+            <img src="images/coffee.png" alt="Flat White" class="cart-item-image">
+            <div class="cart-item-info">
+              <h3 class="cart-item-name">Flat White</h3>
+              <p class="cart-item-details">Double ristretto, steamed milk</p>
+              <div class="cart-item-qty">
+                <button class="qty-btn" aria-label="Decrease quantity">−</button>
+                <span class="qty-value">2</span>
+                <button class="qty-btn" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+            <div class="cart-item-actions">
+              <span class="cart-item-price">$9.80</span>
+              <button class="cart-item-remove">REMOVE</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+          <h2 class="cart-summary-title">Order Summary</h2>
+
+          <div class="cart-summary-row label-row">
+            <span>Subtotal</span>
+            <span>$84.10</span>
+          </div>
+          <div class="cart-summary-row label-row">
+            <span>Delivery Fee</span>
+            <span>$3.99</span>
+          </div>
+          <div class="cart-summary-row label-row">
+            <span>Service Fee</span>
+            <span>$2.50</span>
+          </div>
+          <div class="cart-summary-row total">
+            <span>Total</span>
+            <span>$90.59</span>
+          </div>
+
+          <button class="btn btn-primary btn-large">Proceed to Checkout</button>
+
+          <div class="cart-promo">
+            <span class="cart-promo-label">PROMO CODE</span>
+            <div class="cart-promo-input">
+              <input type="text" class="form-input" placeholder="Enter code" aria-label="Promo code">
+              <button class="btn btn-secondary btn-small">Apply</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name"><span>☕</span> RoastBite</div>
+          <p class="footer-brand-desc">Premium food delivery crafted with care. From kitchen to doorstep, we deliver exceptional flavors that make every meal memorable.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <nav class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="menu.html" class="footer-link">Menu</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Support</h4>
+          <nav class="footer-links">
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Delivery Info</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact</h4>
+          <nav class="footer-links">
+            <a href="#" class="footer-link">hello@roastbite.com</a>
+            <a href="#" class="footer-link">+1 (555) 234-5678</a>
+            <a href="#" class="footer-link">123 Flavor Street</a>
+            <a href="#" class="footer-link">New York, NY 10001</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 ROASTBITE. ALL RIGHTS RESERVED.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="Instagram">IG</a>
+          <a href="#" class="footer-social-link" aria-label="Twitter">X</a>
+          <a href="#" class="footer-social-link" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

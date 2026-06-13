@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — RoastBite</title>
+  <meta name="description" content="Get in touch with RoastBite. Reach out with questions, feedback, or partnership inquiries — we'd love to hear from you.">
+  <meta property="og:title" content="Contact — RoastBite">
+  <meta property="og:description" content="Have questions, feedback, or just want to say hello? We'd love to hear from you.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon">☕</span>
+        <span class="brand-name">RoastBite</span>
+      </a>
+      <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+      <label for="nav-toggle" class="nav-overlay"></label>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="cart.html" class="nav-link cart-link">Cart <span class="cart-badge">3</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label">GET IN TOUCH</span>
+        <h1 class="section-title">Contact Us</h1>
+        <p class="section-subtitle">Have questions, feedback, or just want to say hello? We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Left: Contact Form -->
+          <form class="contact-form" aria-label="Contact form">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-input" placeholder="How can we help?">
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-textarea" placeholder="Tell us more..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+          </form>
+
+          <!-- Right: Contact Info Cards -->
+          <div class="contact-info-cards">
+            <div class="contact-info-card">
+              <span class="contact-info-icon" aria-hidden="true">📍</span>
+              <h3 class="contact-info-title">Visit Us</h3>
+              <p class="contact-info-text">123 Flavor Street<br>New York, NY 10001<br>United States</p>
+            </div>
+            <div class="contact-info-card">
+              <span class="contact-info-icon" aria-hidden="true">📞</span>
+              <h3 class="contact-info-title">Call Us</h3>
+              <p class="contact-info-text">+1 (555) 234-5678<br>Mon – Fri: 9AM – 10PM<br>Sat – Sun: 10AM – 11PM</p>
+            </div>
+            <div class="contact-info-card">
+              <span class="contact-info-icon" aria-hidden="true">✉️</span>
+              <h3 class="contact-info-title">Email Us</h3>
+              <p class="contact-info-text">hello@roastbite.com<br>For partnerships:<br>partners@roastbite.com</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name"><span>☕</span> RoastBite</div>
+          <p class="footer-brand-desc">Premium food delivery crafted with care. From kitchen to doorstep, we deliver exceptional flavors that make every meal memorable.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <nav class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="menu.html" class="footer-link">Menu</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Support</h4>
+          <nav class="footer-links">
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Delivery Info</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact</h4>
+          <nav class="footer-links">
+            <a href="#" class="footer-link">hello@roastbite.com</a>
+            <a href="#" class="footer-link">+1 (555) 234-5678</a>
+            <a href="#" class="footer-link">123 Flavor Street</a>
+            <a href="#" class="footer-link">New York, NY 10001</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 ROASTBITE. ALL RIGHTS RESERVED.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="Instagram">IG</a>
+          <a href="#" class="footer-social-link" aria-label="Twitter">X</a>
+          <a href="#" class="footer-social-link" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

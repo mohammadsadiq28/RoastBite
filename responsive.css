@@ -1,0 +1,409 @@
+/* ============================================
+   ROASTBITE — Responsive Styles
+   ============================================ */
+
+/* ---- Tablet (769px – 1024px) ---- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  :root {
+    --fs-display: 3.2rem;
+    --fs-h1: 2rem;
+    --fs-h2: 1.5rem;
+  }
+
+  .hero-grid {
+    gap: var(--space-2xl);
+  }
+
+  .food-grid,
+  #tab-all:checked ~ #content-all,
+  #tab-burgers:checked ~ #content-burgers,
+  #tab-pizza:checked ~ #content-pizza,
+  #tab-sushi:checked ~ #content-sushi,
+  #tab-salads:checked ~ #content-salads,
+  #tab-pasta:checked ~ #content-pasta,
+  #tab-desserts:checked ~ #content-desserts,
+  #tab-drinks:checked ~ #content-drinks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid .testimonial-card:last-child {
+    grid-column: span 2;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .values-grid .value-card:last-child {
+    grid-column: span 2;
+    max-width: 50%;
+    justify-self: center;
+  }
+
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-summary {
+    position: static;
+  }
+
+  .steps-grid {
+    gap: var(--space-md);
+  }
+
+  .step-card {
+    padding: var(--space-xl) var(--space-sm);
+  }
+}
+
+/* ---- Mobile (≤ 768px) ---- */
+@media (max-width: 768px) {
+  :root {
+    --fs-display: 2.4rem;
+    --fs-h1: 1.8rem;
+    --fs-h2: 1.4rem;
+    --fs-h3: 1.15rem;
+    --container-padding: var(--space-md);
+    --navbar-height: 64px;
+  }
+
+  .section {
+    padding: var(--space-3xl) 0;
+  }
+
+  /* ---- Mobile Navigation ---- */
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    max-width: 320px;
+    height: 100vh;
+    height: 100dvh;
+    background: var(--clr-surface);
+    flex-direction: column;
+    padding: calc(var(--navbar-height) + var(--space-2xl)) var(--space-xl) var(--space-xl);
+    gap: var(--space-lg);
+    transition: right var(--transition-base);
+    box-shadow: -8px 0 32px rgba(43, 24, 16, 0.1);
+    z-index: 999;
+  }
+
+  .nav-toggle:checked ~ .nav-links {
+    right: 0;
+  }
+
+  .nav-toggle:checked ~ .nav-overlay {
+    display: block;
+  }
+
+  /* Hamburger X animation */
+  .nav-toggle:checked ~ .hamburger .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .nav-toggle:checked ~ .hamburger .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle:checked ~ .hamburger .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid rgba(138, 114, 96, 0.1);
+  }
+
+  .nav-link.active::after {
+    display: none;
+  }
+
+  .nav-link.active {
+    color: var(--clr-tertiary);
+  }
+
+  /* ---- Mobile Hero ---- */
+  .hero {
+    padding-top: calc(var(--navbar-height) + var(--space-2xl));
+    padding-bottom: var(--space-2xl);
+    min-height: auto;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .hero-image-wrapper {
+    order: -1;
+  }
+
+  .hero-image {
+    aspect-ratio: 16 / 10;
+  }
+
+  .hero-stats {
+    gap: var(--space-xl);
+  }
+
+  .hero-stat-number {
+    font-size: 1.4rem;
+  }
+
+  /* ---- Mobile Food Grid ---- */
+  .food-grid,
+  #tab-all:checked ~ #content-all,
+  #tab-burgers:checked ~ #content-burgers,
+  #tab-pizza:checked ~ #content-pizza,
+  #tab-sushi:checked ~ #content-sushi,
+  #tab-salads:checked ~ #content-salads,
+  #tab-pasta:checked ~ #content-pasta,
+  #tab-desserts:checked ~ #content-desserts,
+  #tab-drinks:checked ~ #content-drinks {
+    grid-template-columns: 1fr;
+  }
+
+  .food-card-image {
+    height: 200px;
+  }
+
+  /* ---- Mobile Categories ---- */
+  .categories-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: var(--space-sm);
+  }
+
+  .category-card {
+    padding: var(--space-md) var(--space-xs);
+  }
+
+  .category-icon {
+    font-size: 1.8rem;
+  }
+
+  /* ---- Mobile Steps ---- */
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .step-card {
+    padding: var(--space-lg);
+  }
+
+  /* ---- Mobile Testimonials ---- */
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ---- Mobile Footer ---- */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-md);
+    text-align: center;
+  }
+
+  /* ---- Mobile About ---- */
+  .about-story {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid .value-card:last-child {
+    max-width: 100%;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  .team-avatar {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+
+  /* ---- Mobile Contact ---- */
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ---- Mobile Cart ---- */
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-item {
+    grid-template-columns: 64px 1fr;
+    gap: var(--space-md);
+  }
+
+  .cart-item-image {
+    width: 64px;
+    height: 64px;
+  }
+
+  .cart-item-price {
+    grid-column: span 2;
+    text-align: left;
+    margin-top: var(--space-xs);
+  }
+
+  .cart-summary {
+    position: static;
+  }
+
+  /* ---- Mobile CTA Banner ---- */
+  .cta-banner {
+    padding: var(--space-2xl) var(--space-lg);
+    border-radius: var(--rounded-lg);
+  }
+
+  /* ---- Mobile Tab Labels ---- */
+  .tab-labels {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: var(--space-sm);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .tab-labels::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab-label {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* ---- Mobile Section Headers ---- */
+  .section-header {
+    margin-bottom: var(--space-2xl);
+  }
+
+  /* ---- Mobile Buttons ---- */
+  .btn-large {
+    padding: 14px 24px;
+    font-size: var(--fs-body);
+    width: 100%;
+  }
+
+  /* ---- Mobile Page Hero ---- */
+  .page-hero {
+    padding-top: calc(var(--navbar-height) + var(--space-2xl));
+    padding-bottom: var(--space-lg);
+  }
+}
+
+/* ---- Very Small Screens (≤ 380px) ---- */
+@media (max-width: 380px) {
+  :root {
+    --fs-display: 2rem;
+    --fs-h1: 1.5rem;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-item {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .cart-item-image {
+    margin: 0 auto;
+  }
+
+  .cart-item-price {
+    grid-column: 1;
+    text-align: center;
+  }
+}
+
+/* ---- Landscape Mode (short viewport) ---- */
+@media (max-height: 600px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding-top: calc(var(--navbar-height) + var(--space-xl));
+    padding-bottom: var(--space-xl);
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+  }
+
+  .hero-image {
+    aspect-ratio: 1 / 1;
+    max-height: 50vh;
+  }
+
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+}
+
+/* ---- Large Desktop (≥ 1400px) ---- */
+@media (min-width: 1400px) {
+  :root {
+    --container-max: 1320px;
+  }
+
+  .food-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #tab-all:checked ~ #content-all,
+  #tab-burgers:checked ~ #content-burgers,
+  #tab-pizza:checked ~ #content-pizza,
+  #tab-sushi:checked ~ #content-sushi,
+  #tab-salads:checked ~ #content-salads,
+  #tab-pasta:checked ~ #content-pasta,
+  #tab-desserts:checked ~ #content-desserts,
+  #tab-drinks:checked ~ #content-drinks {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

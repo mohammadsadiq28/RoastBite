@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — RoastBite</title>
+  <meta name="description" content="Explore the RoastBite menu. From hearty burgers to delicate sushi, find your perfect meal for delivery.">
+  <meta property="og:title" content="Menu — RoastBite">
+  <meta property="og:description" content="From hearty burgers to delicate sushi, find your perfect meal for delivery.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon">☕</span>
+        <span class="brand-name">RoastBite</span>
+      </a>
+      <label for="nav-toggle" class="hamburger">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+      <label for="nav-toggle" class="nav-overlay"></label>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link active">Menu</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="cart.html" class="nav-link cart-link">Cart <span class="cart-badge">3</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label">OUR MENU</span>
+        <h1 class="section-title">Explore Our Dishes</h1>
+        <p class="section-subtitle">From hearty burgers to delicate sushi, find your perfect meal</p>
+      </div>
+    </section>
+
+    <!-- Menu Tabs Section -->
+    <section class="section">
+      <div class="container">
+        <div class="menu-tabs">
+
+          <!-- Radio Inputs -->
+          <input type="radio" id="tab-all" name="menu-tab" checked>
+          <input type="radio" id="tab-burgers" name="menu-tab">
+          <input type="radio" id="tab-pizza" name="menu-tab">
+          <input type="radio" id="tab-sushi" name="menu-tab">
+          <input type="radio" id="tab-salads" name="menu-tab">
+          <input type="radio" id="tab-pasta" name="menu-tab">
+          <input type="radio" id="tab-desserts" name="menu-tab">
+          <input type="radio" id="tab-drinks" name="menu-tab">
+
+          <!-- Tab Labels -->
+          <div class="tab-labels">
+            <label for="tab-all" class="tab-label">All</label>
+            <label for="tab-burgers" class="tab-label">Burgers</label>
+            <label for="tab-pizza" class="tab-label">Pizza</label>
+            <label for="tab-sushi" class="tab-label">Sushi</label>
+            <label for="tab-salads" class="tab-label">Salads</label>
+            <label for="tab-pasta" class="tab-label">Pasta</label>
+            <label for="tab-desserts" class="tab-label">Desserts</label>
+            <label for="tab-drinks" class="tab-label">Drinks</label>
+          </div>
+
+          <!-- Tab Content: All -->
+          <div id="content-all" class="tab-content">
+
+            <!-- Burgers -->
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/burger.png" alt="Classic Smash Burger" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Burgers</span>
+                <h3 class="food-card-name">Classic Smash Burger</h3>
+                <p class="food-card-desc">Double-smashed patties, American cheese, pickles, special sauce.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>12.90</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/burger.png" alt="Truffle Mushroom Burger" class="food-card-image">
+                <span class="food-card-badge">POPULAR</span>
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Burgers</span>
+                <h3 class="food-card-name">Truffle Mushroom Burger</h3>
+                <p class="food-card-desc">Wild mushrooms, truffle aioli, aged gruyère on brioche.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>16.90</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.9</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/burger.png" alt="BBQ Bacon Stack" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Burgers</span>
+                <h3 class="food-card-name">BBQ Bacon Stack</h3>
+                <p class="food-card-desc">Crispy bacon, cheddar, onion rings, smoky BBQ sauce.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>15.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.6</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pizza -->
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/pizza.png" alt="Margherita Classica" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Pizza</span>
+                <h3 class="food-card-name">Margherita Classica</h3>
+                <p class="food-card-desc">San Marzano tomatoes, buffalo mozzarella, fresh basil.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>14.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.8</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/pizza.png" alt="Pepperoni Feast" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Pizza</span>
+                <h3 class="food-card-name">Pepperoni Feast</h3>
+                <p class="food-card-desc">Double pepperoni, mozzarella, oregano, chili flakes.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>15.90</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/pizza.png" alt="Four Cheese" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Pizza</span>
+                <h3 class="food-card-name">Four Cheese</h3>
+                <p class="food-card-desc">Mozzarella, gorgonzola, parmesan, and fontina blend.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>16.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.8</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sushi -->
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/sushi.png" alt="Salmon Nigiri Set" class="food-card-image">
+                <span class="food-card-badge">NEW</span>
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Sushi</span>
+                <h3 class="food-card-name">Salmon Nigiri Set</h3>
+                <p class="food-card-desc">Eight pieces of premium Norwegian salmon nigiri.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>22.00</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.9</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/sushi.png" alt="Dragon Roll" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Sushi</span>
+                <h3 class="food-card-name">Dragon Roll</h3>
+                <p class="food-card-desc">Tempura shrimp, avocado, eel sauce, tobiko.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>18.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/sushi.png" alt="Tuna Tartare" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Sushi</span>
+                <h3 class="food-card-name">Tuna Tartare</h3>
+                <p class="food-card-desc">Fresh yellowfin tuna, sesame, avocado, crispy wonton.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>20.00</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.8</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Salads -->
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/salad.png" alt="Caesar Classic" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Salads</span>
+                <h3 class="food-card-name">Caesar Classic</h3>
+                <p class="food-card-desc">Romaine, parmesan, croutons, anchovy dressing.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>11.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.6</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/salad.png" alt="Mediterranean Bowl" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Salads</span>
+                <h3 class="food-card-name">Mediterranean Bowl</h3>
+                <p class="food-card-desc">Mixed greens, feta, olives, cherry tomatoes, vinaigrette.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>12.80</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/salad.png" alt="Asian Crunch" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Salads</span>
+                <h3 class="food-card-name">Asian Crunch</h3>
+                <p class="food-card-desc">Cabbage, edamame, mandarin, sesame ginger dressing.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>13.20</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.5</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pasta -->
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/pasta.png" alt="Classic Carbonara" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Pasta</span>
+                <h3 class="food-card-name">Classic Carbonara</h3>
+                <p class="food-card-desc">Guanciale, pecorino, egg yolk, black pepper.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>18.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.8</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/pasta.png" alt="Truffle Pappardelle" class="food-card-image">
+                <span class="food-card-badge">POPULAR</span>
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Pasta</span>
+                <h3 class="food-card-name">Truffle Pappardelle</h3>
+                <p class="food-card-desc">Fresh pappardelle, black truffle cream, parmesan.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>24.00</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.9</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/pasta.png" alt="Spicy Arrabbiata" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Pasta</span>
+                <h3 class="food-card-name">Spicy Arrabbiata</h3>
+                <p class="food-card-desc">Penne, spicy tomato sauce, garlic, fresh chili.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>14.90</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.5</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/dessert.png" alt="Chocolate Lava Cake" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Desserts</span>
+                <h3 class="food-card-name">Chocolate Lava Cake</h3>
+                <p class="food-card-desc">Warm fondant with molten center, vanilla gelato.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>9.90</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.9</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/dessert.png" alt="Tiramisu" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Desserts</span>
+                <h3 class="food-card-name">Tiramisu</h3>
+                <p class="food-card-desc">Classic Italian layered mascarpone, espresso, cocoa.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>8.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.8</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/dessert.png" alt="Crème Brûlée" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Desserts</span>
+                <h3 class="food-card-name">Crème Brûlée</h3>
+                <p class="food-card-desc">Vanilla custard with a caramelized sugar crust.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>10.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.7</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/coffee.png" alt="Espresso" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Drinks</span>
+                <h3 class="food-card-name">Espresso</h3>
+                <p class="food-card-desc">Single-origin espresso, rich and bold.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>3.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.8</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/coffee.png" alt="Flat White" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Drinks</span>
+                <h3 class="food-card-name">Flat White</h3>
+                <p class="food-card-desc">Double ristretto, velvety steamed milk.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>4.90</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.9</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/coffee.png" alt="Iced Latte" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Drinks</span>
+                <h3 class="food-card-name">Iced Latte</h3>
+                <p class="food-card-desc">Espresso over ice with cold milk, optional vanilla.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>5.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.7</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Tab Content: Burgers -->
+          <div id="content-burgers" class="tab-content">
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/burger.png" alt="Classic Smash Burger" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Burgers</span>
+                <h3 class="food-card-name">Classic Smash Burger</h3>
+                <p class="food-card-desc">Double-smashed patties, American cheese, pickles, special sauce.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>12.90</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/burger.png" alt="Truffle Mushroom Burger" class="food-card-image">
+                <span class="food-card-badge">POPULAR</span>
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Burgers</span>
+                <h3 class="food-card-name">Truffle Mushroom Burger</h3>
+                <p class="food-card-desc">Wild mushrooms, truffle aioli, aged gruyère on brioche.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>16.90</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.9</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/burger.png" alt="BBQ Bacon Stack" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Burgers</span>
+                <h3 class="food-card-name">BBQ Bacon Stack</h3>
+                <p class="food-card-desc">Crispy bacon, cheddar, onion rings, smoky BBQ sauce.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>15.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.6</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Tab Content: Pizza -->
+          <div id="content-pizza" class="tab-content">
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/pizza.png" alt="Margherita Classica" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Pizza</span>
+                <h3 class="food-card-name">Margherita Classica</h3>
+                <p class="food-card-desc">San Marzano tomatoes, buffalo mozzarella, fresh basil.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>14.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.8</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/pizza.png" alt="Pepperoni Feast" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Pizza</span>
+                <h3 class="food-card-name">Pepperoni Feast</h3>
+                <p class="food-card-desc">Double pepperoni, mozzarella, oregano, chili flakes.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>15.90</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/pizza.png" alt="Four Cheese" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Pizza</span>
+                <h3 class="food-card-name">Four Cheese</h3>
+                <p class="food-card-desc">Mozzarella, gorgonzola, parmesan, and fontina blend.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>16.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.8</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Tab Content: Sushi -->
+          <div id="content-sushi" class="tab-content">
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/sushi.png" alt="Salmon Nigiri Set" class="food-card-image">
+                <span class="food-card-badge">NEW</span>
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Sushi</span>
+                <h3 class="food-card-name">Salmon Nigiri Set</h3>
+                <p class="food-card-desc">Eight pieces of premium Norwegian salmon nigiri.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>22.00</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.9</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/sushi.png" alt="Dragon Roll" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Sushi</span>
+                <h3 class="food-card-name">Dragon Roll</h3>
+                <p class="food-card-desc">Tempura shrimp, avocado, eel sauce, tobiko.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>18.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/sushi.png" alt="Tuna Tartare" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Sushi</span>
+                <h3 class="food-card-name">Tuna Tartare</h3>
+                <p class="food-card-desc">Fresh yellowfin tuna, sesame, avocado, crispy wonton.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>20.00</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.8</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Tab Content: Salads -->
+          <div id="content-salads" class="tab-content">
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/salad.png" alt="Caesar Classic" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Salads</span>
+                <h3 class="food-card-name">Caesar Classic</h3>
+                <p class="food-card-desc">Romaine, parmesan, croutons, anchovy dressing.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>11.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.6</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/salad.png" alt="Mediterranean Bowl" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Salads</span>
+                <h3 class="food-card-name">Mediterranean Bowl</h3>
+                <p class="food-card-desc">Mixed greens, feta, olives, cherry tomatoes, vinaigrette.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>12.80</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/salad.png" alt="Asian Crunch" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Salads</span>
+                <h3 class="food-card-name">Asian Crunch</h3>
+                <p class="food-card-desc">Cabbage, edamame, mandarin, sesame ginger dressing.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>13.20</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.5</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Tab Content: Pasta -->
+          <div id="content-pasta" class="tab-content">
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/pasta.png" alt="Classic Carbonara" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Pasta</span>
+                <h3 class="food-card-name">Classic Carbonara</h3>
+                <p class="food-card-desc">Guanciale, pecorino, egg yolk, black pepper.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>18.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.8</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/pasta.png" alt="Truffle Pappardelle" class="food-card-image">
+                <span class="food-card-badge">POPULAR</span>
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Pasta</span>
+                <h3 class="food-card-name">Truffle Pappardelle</h3>
+                <p class="food-card-desc">Fresh pappardelle, black truffle cream, parmesan.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>24.00</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.9</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/pasta.png" alt="Spicy Arrabbiata" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Pasta</span>
+                <h3 class="food-card-name">Spicy Arrabbiata</h3>
+                <p class="food-card-desc">Penne, spicy tomato sauce, garlic, fresh chili.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>14.90</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.5</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Tab Content: Desserts -->
+          <div id="content-desserts" class="tab-content">
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/dessert.png" alt="Chocolate Lava Cake" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Desserts</span>
+                <h3 class="food-card-name">Chocolate Lava Cake</h3>
+                <p class="food-card-desc">Warm fondant with molten center, vanilla gelato.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>9.90</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.9</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/dessert.png" alt="Tiramisu" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Desserts</span>
+                <h3 class="food-card-name">Tiramisu</h3>
+                <p class="food-card-desc">Classic Italian layered mascarpone, espresso, cocoa.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>8.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.8</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/dessert.png" alt="Crème Brûlée" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Desserts</span>
+                <h3 class="food-card-name">Crème Brûlée</h3>
+                <p class="food-card-desc">Vanilla custard with a caramelized sugar crust.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>10.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.7</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Tab Content: Drinks -->
+          <div id="content-drinks" class="tab-content">
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/coffee.png" alt="Espresso" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Drinks</span>
+                <h3 class="food-card-name">Espresso</h3>
+                <p class="food-card-desc">Single-origin espresso, rich and bold.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>3.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.8</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/coffee.png" alt="Flat White" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Drinks</span>
+                <h3 class="food-card-name">Flat White</h3>
+                <p class="food-card-desc">Double ristretto, velvety steamed milk.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>4.90</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.9</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="food-card">
+              <div class="food-card-image-wrapper">
+                <img src="images/coffee.png" alt="Iced Latte" class="food-card-image">
+              </div>
+              <div class="food-card-content">
+                <span class="food-card-category">Drinks</span>
+                <h3 class="food-card-name">Iced Latte</h3>
+                <p class="food-card-desc">Espresso over ice with cold milk, optional vanilla.</p>
+                <div class="food-card-footer">
+                  <span class="food-card-price"><span class="currency">$</span>5.50</span>
+                  <span class="food-card-rating"><span class="star">★</span> 4.7</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name"><span>☕</span> RoastBite</div>
+          <p class="footer-brand-desc">Premium food delivery crafted with care. From kitchen to doorstep, we deliver exceptional flavors that make every meal memorable.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <nav class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="menu.html" class="footer-link">Menu</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Support</h4>
+          <nav class="footer-links">
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Delivery Info</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact</h4>
+          <nav class="footer-links">
+            <a href="#" class="footer-link">hello@roastbite.com</a>
+            <a href="#" class="footer-link">+1 (555) 234-5678</a>
+            <a href="#" class="footer-link">123 Flavor Street</a>
+            <a href="#" class="footer-link">New York, NY 10001</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 ROASTBITE. ALL RIGHTS RESERVED.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="Instagram">IG</a>
+          <a href="#" class="footer-social-link" aria-label="Twitter">X</a>
+          <a href="#" class="footer-social-link" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

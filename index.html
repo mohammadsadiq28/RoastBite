@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RoastBite — Premium food delivery from artisan kitchens to your doorstep. Discover curated meals crafted by the city's finest chefs, delivered fresh and fast.">
+  <meta name="keywords" content="food delivery, premium meals, restaurant delivery, RoastBite">
+  <meta name="author" content="RoastBite">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="RoastBite — Premium Food Delivery">
+  <meta property="og:description" content="From artisan kitchens to your table in minutes. Discover curated meals crafted by the city's finest chefs, delivered fresh and fast.">
+  <meta property="og:image" content="images/hero_food.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://roastbite.com">
+
+  <title>RoastBite — Premium Food Delivery</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon">☕</span>
+        <span class="brand-name">RoastBite</span>
+      </a>
+      <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+      <label for="nav-toggle" class="nav-overlay"></label>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="cart.html" class="nav-link cart-link">Cart <span class="cart-badge">3</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <p class="hero-label">PREMIUM FOOD DELIVERY</p>
+          <h1 class="hero-title display-text">Flavors that arrive at your doorstep</h1>
+          <p class="hero-subtitle">From artisan kitchens to your table in minutes. Discover curated meals crafted by the city's finest chefs, delivered fresh and fast.</p>
+          <a href="menu.html" class="btn btn-primary btn-large">Explore Menu</a>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-number">2K+</span>
+              <span class="hero-stat-label">HAPPY CUSTOMERS</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-number">150+</span>
+              <span class="hero-stat-label">MENU ITEMS</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-number">30min</span>
+              <span class="hero-stat-label">AVG DELIVERY</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <img src="images/hero_food.png" alt="Delicious gourmet food beautifully plated" class="hero-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CATEGORIES SECTION ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">BROWSE</span>
+        <h2 class="section-title">Explore Categories</h2>
+      </div>
+      <div class="categories-grid">
+        <div class="category-card">
+          <span class="category-icon" aria-hidden="true">🍔</span>
+          <p class="category-name">Burgers</p>
+          <p class="category-count">12 items</p>
+        </div>
+        <div class="category-card">
+          <span class="category-icon" aria-hidden="true">🍕</span>
+          <p class="category-name">Pizza</p>
+          <p class="category-count">8 items</p>
+        </div>
+        <div class="category-card">
+          <span class="category-icon" aria-hidden="true">🍣</span>
+          <p class="category-name">Sushi</p>
+          <p class="category-count">10 items</p>
+        </div>
+        <div class="category-card">
+          <span class="category-icon" aria-hidden="true">🥗</span>
+          <p class="category-name">Salads</p>
+          <p class="category-count">9 items</p>
+        </div>
+        <div class="category-card">
+          <span class="category-icon" aria-hidden="true">🍝</span>
+          <p class="category-name">Pasta</p>
+          <p class="category-count">7 items</p>
+        </div>
+        <div class="category-card">
+          <span class="category-icon" aria-hidden="true">🍰</span>
+          <p class="category-name">Desserts</p>
+          <p class="category-count">11 items</p>
+        </div>
+        <div class="category-card">
+          <span class="category-icon" aria-hidden="true">☕</span>
+          <p class="category-name">Drinks</p>
+          <p class="category-count">15 items</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED DISHES SECTION ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">CHEF'S PICKS</span>
+        <h2 class="section-title">Featured Dishes</h2>
+        <p class="section-subtitle">Handpicked favorites from our most popular restaurants</p>
+      </div>
+      <div class="food-grid">
+
+        <!-- Card 1: Truffle Mushroom Burger -->
+        <article class="food-card">
+          <div class="food-card-image-wrapper">
+            <img src="images/burger.png" alt="Truffle Mushroom Burger" class="food-card-image">
+            <span class="food-card-badge">POPULAR</span>
+          </div>
+          <div class="food-card-content">
+            <p class="food-card-category">BURGERS</p>
+            <h3 class="food-card-name">Truffle Mushroom Burger</h3>
+            <p class="food-card-desc">Wild mushrooms, truffle aioli, and aged gruyère on a toasted brioche bun.</p>
+            <div class="food-card-footer">
+              <span class="food-card-price"><span class="currency">$</span>16.90</span>
+              <span class="food-card-rating"><span class="star">★</span> 4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Margherita Classica -->
+        <article class="food-card">
+          <div class="food-card-image-wrapper">
+            <img src="images/pizza.png" alt="Margherita Classica" class="food-card-image">
+          </div>
+          <div class="food-card-content">
+            <p class="food-card-category">PIZZA</p>
+            <h3 class="food-card-name">Margherita Classica</h3>
+            <p class="food-card-desc">San Marzano tomatoes, fresh buffalo mozzarella, basil, and extra virgin olive oil.</p>
+            <div class="food-card-footer">
+              <span class="food-card-price"><span class="currency">$</span>14.50</span>
+              <span class="food-card-rating"><span class="star">★</span> 4.8</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Salmon Nigiri Set -->
+        <article class="food-card">
+          <div class="food-card-image-wrapper">
+            <img src="images/sushi.png" alt="Salmon Nigiri Set" class="food-card-image">
+            <span class="food-card-badge">NEW</span>
+          </div>
+          <div class="food-card-content">
+            <p class="food-card-category">SUSHI</p>
+            <h3 class="food-card-name">Salmon Nigiri Set</h3>
+            <p class="food-card-desc">Eight pieces of premium Norwegian salmon nigiri with pickled ginger.</p>
+            <div class="food-card-footer">
+              <span class="food-card-price"><span class="currency">$</span>22.00</span>
+              <span class="food-card-rating"><span class="star">★</span> 4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Mediterranean Bowl -->
+        <article class="food-card">
+          <div class="food-card-image-wrapper">
+            <img src="images/salad.png" alt="Mediterranean Bowl" class="food-card-image">
+          </div>
+          <div class="food-card-content">
+            <p class="food-card-category">SALADS</p>
+            <h3 class="food-card-name">Mediterranean Bowl</h3>
+            <p class="food-card-desc">Mixed greens, feta, kalamata olives, cherry tomatoes, and herb vinaigrette.</p>
+            <div class="food-card-footer">
+              <span class="food-card-price"><span class="currency">$</span>12.80</span>
+              <span class="food-card-rating"><span class="star">★</span> 4.7</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5: Classic Carbonara -->
+        <article class="food-card">
+          <div class="food-card-image-wrapper">
+            <img src="images/pasta.png" alt="Classic Carbonara" class="food-card-image">
+          </div>
+          <div class="food-card-content">
+            <p class="food-card-category">PASTA</p>
+            <h3 class="food-card-name">Classic Carbonara</h3>
+            <p class="food-card-desc">Guanciale, pecorino romano, egg yolk, and freshly cracked black pepper.</p>
+            <div class="food-card-footer">
+              <span class="food-card-price"><span class="currency">$</span>18.50</span>
+              <span class="food-card-rating"><span class="star">★</span> 4.8</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6: Chocolate Lava Cake -->
+        <article class="food-card">
+          <div class="food-card-image-wrapper">
+            <img src="images/dessert.png" alt="Chocolate Lava Cake" class="food-card-image">
+          </div>
+          <div class="food-card-content">
+            <p class="food-card-category">DESSERTS</p>
+            <h3 class="food-card-name">Chocolate Lava Cake</h3>
+            <p class="food-card-desc">Warm chocolate fondant with a molten center, served with vanilla gelato.</p>
+            <div class="food-card-footer">
+              <span class="food-card-price"><span class="currency">$</span>9.90</span>
+              <span class="food-card-rating"><span class="star">★</span> 4.9</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS SECTION ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">SIMPLE STEPS</span>
+        <h2 class="section-title">How It Works</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-number">1</span>
+          <span class="step-icon" aria-hidden="true">📋</span>
+          <h3 class="step-title">Browse Menu</h3>
+          <p class="step-desc">Explore our curated selection of dishes from top-rated local restaurants and cafes.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-number">2</span>
+          <span class="step-icon" aria-hidden="true">🛒</span>
+          <h3 class="step-title">Place Order</h3>
+          <p class="step-desc">Customize your meal, add to cart, and checkout securely in just a few clicks.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-number">3</span>
+          <span class="step-icon" aria-hidden="true">🚀</span>
+          <h3 class="step-title">Fast Delivery</h3>
+          <p class="step-desc">Sit back and relax. Your freshly prepared meal arrives at your door in under 30 minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS SECTION ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">TESTIMONIALS</span>
+        <h2 class="section-title">What Our Customers Say</h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <p class="testimonial-stars">★★★★★</p>
+          <p class="testimonial-text">"The truffle burger was absolutely divine. Best delivery experience I've ever had — hot, fresh, and perfectly packed."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AS</div>
+            <div class="testimonial-info">
+              <span class="testimonial-name">Amara Singh</span>
+              <span class="testimonial-role">FOOD BLOGGER</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <p class="testimonial-stars">★★★★★</p>
+          <p class="testimonial-text">"Finally a delivery app that cares about quality. The carbonara tasted like it was made in an Italian grandmother's kitchen."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JL</div>
+            <div class="testimonial-info">
+              <span class="testimonial-name">James Liu</span>
+              <span class="testimonial-role">REGULAR CUSTOMER</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <p class="testimonial-stars">★★★★★</p>
+          <p class="testimonial-text">"Lightning-fast delivery and the sushi was impeccable. RoastBite has completely replaced my other food apps."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">EP</div>
+            <div class="testimonial-info">
+              <span class="testimonial-name">Elena Petrov</span>
+              <span class="testimonial-role">VERIFIED BUYER</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA BANNER SECTION ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <span class="section-label">READY TO ORDER?</span>
+        <h2 class="section-title">Your Next Favorite Meal Is One Click Away</h2>
+        <p class="section-subtitle">Join thousands of food lovers and get your first delivery free.</p>
+        <a href="menu.html" class="btn btn-primary btn-large mt-xl">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name"><span>☕</span> RoastBite</div>
+          <p class="footer-brand-desc">Premium food delivery crafted with care. From kitchen to doorstep, we deliver exceptional flavors that make every meal memorable.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <nav class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="menu.html" class="footer-link">Menu</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Support</h4>
+          <nav class="footer-links">
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Delivery Info</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact</h4>
+          <nav class="footer-links">
+            <a href="#" class="footer-link">hello@roastbite.com</a>
+            <a href="#" class="footer-link">+1 (555) 234-5678</a>
+            <a href="#" class="footer-link">123 Flavor Street</a>
+            <a href="#" class="footer-link">New York, NY 10001</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 ROASTBITE. ALL RIGHTS RESERVED.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="Instagram">IG</a>
+          <a href="#" class="footer-social-link" aria-label="Twitter">X</a>
+          <a href="#" class="footer-social-link" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
